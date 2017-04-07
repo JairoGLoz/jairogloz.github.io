@@ -7,9 +7,35 @@
 <body>
 
 	<a-scene>
+
+		<!-- =============== Preload assets ======================= -->	
+		<a-assets>
+			<!-- cello -->
+			<a-asset-item id="cello_obj" src="assets/cello_and_stand.obj"></a-asset-item>
+			<a-asset-item id="cello_mtl" src="assets/cello_and_stand.mtl"></a-asset-item>
+
+			<!-- cello -->
+			<a-asset-item id="belle_obj" src="assets/Belle/Belle.obj"></a-asset-item>
+			<a-asset-item id="belle_mtl" src="assets/Belle/Belle.mtl"></a-asset-item>
+		</a-assets>
 		<a-box position = "-1 0.5 -3" rotation = "0 45 0" color = "#FF0000"></a-box>
 		
-		<a-sky src="https://cdn.glitch.com/659b9525-ad04-484d-a103-6d051a1ed0b1%2F3603.jpg?1491522767040"></a-sky>	
+		<!-- ================= skybox =========================== -->
+		<!-- Served from the glitch CDN -->
+		<!-- <a-sky src="https://cdn.glitch.com/659b9525-ad04-484d-a103-6d051a1ed0b1%2F3603.jpg?1491522767040"></a-sky>	-->
+
+		<!-- Served from my assets -->
+		<a-sky src="assets/3603.jpg"></a-sky>
+
+		<!-- ================= skybox =========================== -->
+
+		<!-- ================= loading an obj model ============= -->
+		<!-- Se necesita cargar en los assets el modelo y el material por separado -->
+		<a-entity obj-model = "obj: #cello_obj; mtl: #cello_mtl" position="1 0.5 -3" rotation="-90 0 0"></a-entity>
+		<a-entity obj-model = "obj: #belle_obj; mtl: #belle_mtl" position="3 0 -3" scale=".01 .01 .01"></a-entity>
+		<!-- ================= loading an obj model ============= -->
+
+
 		<a-entity id="text" text="value:Los Bolivar rifan!; color:#000" position="2 6.5 1" scale="8 8 8" rotation = "90 0 0"></a-entity>
 	</a-scene>
 </body>

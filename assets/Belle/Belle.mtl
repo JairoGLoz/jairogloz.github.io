@@ -1,0 +1,436 @@
+newmtl SkinHip
+d 1
+Ns 0.93
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.121569 0.121569 0.121569
+Km 0.00028
+map_Kd /Maps/bd1.jpg
+
+newmtl SkinTorso
+d 1
+Ns 0.93
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.121569 0.121569 0.121569
+Km 0.00028
+map_Kd /Maps/bd1.jpg
+
+newmtl PubicHair
+d 1
+Ns 0.845
+Ni 0
+Ka 0 0 0
+Kd 0.164706 0.129412 0.0666667
+Ks 0 0 0
+Km 0.00012
+map_Kd /Maps/bd.jpg
+
+newmtl SkinNeck
+d 1
+Ns 0.93
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.121569 0.121569 0.121569
+Km 0.00028
+map_Kd /Maps/bd1.jpg
+
+newmtl SkinHead
+d 1
+Ns 0.93
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.121569 0.121569 0.121569
+Km 0.00028
+map_Kd /Maps/fc1.jpg
+
+newmtl SkinScalp
+d 1
+Ns 0.93
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.121569 0.121569 0.121569
+Km 0.00028
+map_Kd /Maps/fc1.jpg
+
+newmtl Nostrils
+d 1
+Ns 0.93
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.121569 0.121569 0.121569
+Km 0.00016
+map_Kd /Maps/fc1.jpg
+
+newmtl EyeSocket
+d 0
+Ns 0.815
+Ni 0
+Ka 0 0 0
+Kd 0.0901961 0.0901961 0.0901961
+Ks 1 1 1
+Km 0.00016
+map_Kd /Maps/fc1.jpg
+
+newmtl InnerMouth
+d 1
+Ns 0.93
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.121569 0.121569 0.121569
+Km 0.00016
+map_Kd /Maps/fc1.jpg
+
+newmtl Lips
+d 1
+Ns 0.93
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.121569 0.121569 0.121569
+Km 0.00024
+map_Kd /Maps/fc1.jpg
+
+newmtl Lacrimal
+d 1
+Ns 0.93
+Ni 0
+Ka 0 0 0
+Kd 0.611765 0.521569 0.486275
+Ks 0.364706 0.364706 0.364706
+Km 0.00016
+map_Kd /Maps/th1.jpg
+
+newmtl Eyebrows
+d 0
+Ns 0.845
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+Km 0.0003
+map_Kd /Maps/fc1.jpg
+
+newmtl Teeth
+d 1
+Ns 0.895
+Ni 0
+Ka 0.0705882 0.0705882 0.0705882
+Kd 1 1 1
+Ks 1 1 1
+Km 0.0003
+
+newmtl Gums
+d 1
+Ns 0.79
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.364706 0.364706 0.364706
+Km 0.0003
+map_Kd /Maps/th1.jpg
+
+newmtl Tongue
+d 1
+Ns 0.895
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.054902 0.054902 0.054902
+Km 0.000208
+map_Kd /Maps/fc1.jpg
+
+newmtl LCornea
+d 0
+Ns 0.7
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 1 1 1
+Km 0.0003
+
+newmtl LPupil
+d 1
+Ns 0.855
+Ni 0
+Ka 0.47451 0.466667 0.501961
+Kd 1 1 1
+Ks 1 1 1
+Km 0.00012
+map_Kd /Maps/eb1a.jpg
+
+newmtl RCornea
+d 0
+Ns 0.69
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 1 1 1
+Km 0.00012
+
+newmtl RPupil
+d 1
+Ns 0.86
+Ni 0
+Ka 0.47451 0.466667 0.501961
+Kd 1 1 1
+Ks 1 1 1
+Km 0.00012
+map_Kd /Maps/eb1a.jpg
+
+newmtl Nipples
+d 1
+Ns 0.93
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.121569 0.121569 0.121569
+Km 0.00028
+map_Kd /Maps/bd1.jpg
+
+newmtl SkinForearm
+d 1
+Ns 0.93
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.121569 0.121569 0.121569
+Km 0.00028
+map_Kd /Maps/bd1.jpg
+
+newmtl SkinArm
+d 1
+Ns 0.93
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.121569 0.121569 0.121569
+Km 0.00028
+map_Kd /Maps/bd1.jpg
+
+newmtl SkinHand
+d 1
+Ns 0.93
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.121569 0.121569 0.121569
+Km 0.00028
+map_Kd /Maps/bd1.jpg
+
+newmtl Fingernails
+d 1
+Ns 0.93
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 1 1 1
+Km 0.00028
+map_Kd /Maps/bd1.jpg
+
+newmtl SkinThigh
+d 1
+Ns 0.85
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.0156863 0.0156863 0.0156863
+Km 0.0003
+map_Kd /Maps/bd1.jpg
+
+newmtl SkinKnee
+d 1
+Ns 0.85
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.0156863 0.0156863 0.0156863
+Km 0.0003
+map_Kd /Maps/bd1.jpg
+
+newmtl SkinFeet
+d 1
+Ns 0.93
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.121569 0.121569 0.121569
+Km 0.00028
+map_Kd /Maps/bd1.jpg
+
+newmtl SkinShin
+d 1
+Ns 0.85
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.0156863 0.0156863 0.0156863
+Km 0.0003
+map_Kd /Maps/bd1.jpg
+
+newmtl Toenails
+d 1
+Ns 0.93
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 1 1 1
+Km 0.00028
+
+newmtl Eyelashes
+d 1
+Ns 0.85
+Ni 0
+Ka 0 0 0
+Kd 0 0 0
+Ks 0 0 0
+Km 0.0003
+map_D /Maps/el1.jpg
+
+newmtl LEyewhite
+d 1
+Ns 0.81
+Ni 0
+Ka 0.47451 0.466667 0.501961
+Kd 1 1 1
+Ks 1 1 1
+Km 0.00016
+map_Kd /Maps/eb1a.jpg
+
+newmtl LIris
+d 1
+Ns 0.875
+Ni 0
+Ka 0.47451 0.466667 0.501961
+Kd 1 1 1
+Ks 1 1 1
+Km 0.00016
+map_Kd /Maps/eb1a.jpg
+
+newmtl REyewhite
+d 1
+Ns 0.795
+Ni 0
+Ka 0.47451 0.466667 0.501961
+Kd 1 1 1
+Ks 1 1 1
+Km 0.00016
+map_Kd /Maps/eb1a.jpg
+
+newmtl RIris
+d 1
+Ns 0.855
+Ni 0
+Ka 0.47451 0.466667 0.501961
+Kd 1 1 1
+Ks 1 1 1
+Km 0.00016
+map_Kd /Maps/eb1a.jpg
+
+newmtl dress
+d 1
+Ns 0.75
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+Km 0.0004
+
+newmtl button
+d 1
+Ns 0.983333
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 1 1 1
+Km 0.0004
+
+newmtl default
+d 1
+Ns 1
+Ni 0
+Ka 0 0 0
+Kd 0 0.501961 0.74902
+Ks 0 0 0
+Km 0
+
+newmtl Upper
+d 1
+Ns 0.95
+Ni 0
+Ka 0 0 0
+Kd 0.129412 0.129412 0.129412
+Ks 0.6 0.6 0.6
+Km 3.2e-09
+
+newmtl Sole
+d 1
+Ns 0.95
+Ni 0
+Ka 0 0 0
+Kd 0.486275 0.376471 0.313726
+Ks 0.6 0.6 0.6
+Km 3.2e-09
+
+newmtl Upper_shoe
+d 1
+Ns 0.95
+Ni 0
+Ka 0 0 0
+Kd 0.129412 0.129412 0.129412
+Ks 0.6 0.6 0.6
+Km 3.2e-09
+
+newmtl Sole_shoe
+d 1
+Ns 0.95
+Ni 0
+Ka 0 0 0
+Kd 0.486275 0.376471 0.313726
+Ks 0.6 0.6 0.6
+Km 3.2e-09
+
+newmtl default_skirt
+d 1
+Ns 1
+Ni 0
+Ka 0 0 0
+Kd 0 0.501961 0.74902
+Ks 0 0 0
+Km 0
+
+newmtl default_skirt_white
+d 1
+Ns 1
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 0 0 0
+Km 0
+
+newmtl default_belle_hair
+d 1
+Ns 1
+Ni 0
+Ka 0 0 0
+Kd 1 1 1
+Ks 1 1 1
+Km 0
+map_Kd /Maps/hr1.jpg
+
+newmtl default_lasso
+d 1
+Ns 0.75
+Ni 0
+Ka 0 0 0
+Kd 0 0.501961 0.74902
+Ks 0 0 0
+Km 0
+
