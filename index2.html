@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hello Los Bolívar</title>
+	<script src="https://aframe.io/releases/0.5.0/aframe.min.js" ></script>
+	<script src="https://unpkg.com/aframe-entity-generator-component@^3.0.0/dist/aframe-entity-generator-component.min.js"></script>
+</head>
+<body>
+
+	<a-scene>
+
+		<!-- =============== Preload assets ======================= -->	
+		<a-assets>
+			<!-- cello -->
+			<a-asset-item id="cello_obj" src="assets/cello_and_stand.obj"></a-asset-item>
+			<a-asset-item id="cello_mtl" src="assets/cello_and_stand.mtl"></a-asset-item>
+
+			<a-asset-item id="rabbit_obj" src="assets/rabbit-obj/rabbit.obj"></a-asset-item>
+			<a-asset-item id="rabbit_mtl" src="assets/rabbit-obj/rabbit.mtl"></a-asset-item>
+
+			<!-- belle OBJ -->
+			<!--<a-asset-item id="belle_obj" src="assets/Belle/Belle.obj"></a-asset-item>
+			<a-asset-item id="belle_mtl" src="assets/Belle/Belle.mtl"></a-asset-item>-->
+
+			<!-- BLEND (JSON) -->
+			<a-asset-item id="rabbit_json" src="assets/rabbit-threejs/rabbit.json"  ></a-asset-item>
+			<a-asset-item id="swing_json" src="assets/swing-threejs/swing.json"  ></a-asset-item>
+	
+			<!-- COLLADA -->
+			<a-asset-item id="rabbit_dae" src="assets/rabbit-dae/rabbit.dae"  ></a-asset-item>
+		</a-assets>
+		<a-box position = "-1 0.5 -3" rotation = "0 45 0" color = "#FF0000"></a-box>
+		
+		<!-- ================= skybox =========================== -->
+		<!-- Served from the glitch CDN -->
+		<!-- <a-sky src="https://cdn.glitch.com/659b9525-ad04-484d-a103-6d051a1ed0b1%2F3603.jpg?1491522767040"></a-sky>	-->
+
+		<!-- Served from my assets -->
+		<a-sky src="assets/3603.jpg"></a-sky>
+
+		<!--<a-obj-model src="apple.obj"></a-obj-model>-->
+
+		<!-- ================= skybox =========================== -->
+
+		<!-- ================= loading an obj model ============= -->
+		<!-- Se necesita cargar en los assets el modelo y el material por separado -->
+		<a-entity obj-model = "obj: #cello_obj; mtl: #cello_mtl" position="1 0.5 -3" rotation="-90 0 0"></a-entity>
+
+		<a-entity text="value: Rabbit OBJ; color:#000" position ="-0.5 3 -3" scale="8 8 8"></a-entity>
+		<a-entity id="rabbit_obj_entiy" obj-model = "obj: #rabbit_obj; mtl: #rabbit_mtl" position="-3 0 -3" "></a-entity>
+		<!--<a-entity obj-model = "obj: #belle_obj; mtl: #belle_mtl" position="3 0 -3" scale=".01 .01 .01"></a-entity>
+		<!-- ================= loading an obj model ============= -->
+
+		<!-- ================= loading an json model ============= -->
+		<a-entity id="rabbit_json_entity" json-model="#" position="-0.5 0 -1" scale="2 2 2"></a-entity>
+
+		<a-entity id="swing_json_entity" json-model="swing_json" position="-5 0 -1" scale="2 2 2"></a-entity>
+		<!-- ================= loading an json model ============= -->
+
+		<!-- ================= loading an dae model ============= -->
+		<a-entity text="value: Rabbit DAE; color:#000" position ="6 3 -5" scale="8 8 8"></a-entity>
+		<a-entity id="rabbit_dae_entity" collada-model="#rabbit_dae" position="3 0 -5"></a-entity>
+		<!-- ================= loading an dae model ============= -->
+
+
+		<a-entity id="text" text="value:Los Bolivar rifan!; color:#000" position="2 6.5 1" scale="8 8 8" rotation = "90 0 0"></a-entity>
+	</a-scene>
+</body>
+</html>

@@ -1,42 +1,161 @@
-<!DOCTYPE html>
 <html>
-<head>
-	<title>Hello Los Bolívar</title>
-	<script src="https://aframe.io/releases/0.5.0/aframe.min.js" ></script>
-</head>
-<body>
+  <head>
+    <title>Lesson 3: Rotation</title>
+    <!--<script src="assets/aframe-0.4.js"></script>-->
+    <script src="https://aframe.io/releases/0.5.0/aframe.min.js" ></script>
+  </head>
+  <body>
+    <a-scene>
+      <!--
+        Now lets take a look at rotation. Rotation is measured simply, using
+        degrees. There are 360° in a circle, as we all know. The trickier
+        part is learning to quickly pick the axis (x,y or z) that is appropriate
+        for the rotation you want to do, and then also which direction positive
+        and negative rotation is around that axis.
 
-	<a-scene>
+        For this, we can refer back to the right-hand rule. Point your thumb
+        in the direction of the axis, and the curve of your fingers will tell
+        you which direction a positive rotation is.
 
-		<!-- =============== Preload assets ======================= -->	
-		<a-assets>
-			<!-- cello -->
-			<a-asset-item id="cello_obj" src="assets/cello_and_stand.obj"></a-asset-item>
-			<a-asset-item id="cello_mtl" src="assets/cello_and_stand.mtl"></a-asset-item>
+        But enough talk. Let's learn by doing.
 
-			<!-- cello -->
-			<a-asset-item id="belle_obj" src="assets/Belle/Belle.obj"></a-asset-item>
-			<a-asset-item id="belle_mtl" src="assets/Belle/Belle.mtl"></a-asset-item>
-		</a-assets>
-		<a-box position = "-1 0.5 -3" rotation = "0 45 0" color = "#FF0000"></a-box>
-		
-		<!-- ================= skybox =========================== -->
-		<!-- Served from the glitch CDN -->
-		<!-- <a-sky src="https://cdn.glitch.com/659b9525-ad04-484d-a103-6d051a1ed0b1%2F3603.jpg?1491522767040"></a-sky>	-->
+        Here we have a *very roughly scaled* model of the solar system.
+        With 8 planets, instead of the 9 we group up with, of course.
 
-		<!-- Served from my assets -->
-		<a-sky src="assets/3603.jpg"></a-sky>
+        Sorry Pluto.
 
-		<!-- ================= skybox =========================== -->
+        A couple of things don't seem to be right with this solar system though.
 
-		<!-- ================= loading an obj model ============= -->
-		<!-- Se necesita cargar en los assets el modelo y el material por separado -->
-		<a-entity obj-model = "obj: #cello_obj; mtl: #cello_mtl" position="1 0.5 -3" rotation="-90 0 0"></a-entity>
-		<a-entity obj-model = "obj: #belle_obj; mtl: #belle_mtl" position="3 0 -3" scale=".01 .01 .01"></a-entity>
-		<!-- ================= loading an obj model ============= -->
+        First: the planets are all perfectly aligned. Try spreading their orbits
+        around the sun.
 
+        Second: Saturn's rings don't look like they are at the right angle.
 
-		<a-entity id="text" text="value:Los Bolivar rifan!; color:#000" position="2 6.5 1" scale="8 8 8" rotation = "90 0 0"></a-entity>
-	</a-scene>
-</body>
+        Third: how would you rotate the solar system so that we are looking
+        down on it instead?
+
+        Bonus: instead of rotating the solar system, see if you can achieve the
+        same result by positioning and moving the camera.
+      -->
+      <a-camera position = "0 150 -150" rotation="-90 0 0"></a-camera>
+      <a-entity id="solar-system" position="0 0 -150" rotation="0 0 0">
+
+        <a-sphere id="sun"
+          radius="40"
+          color="yellow"></a-sphere>
+        <a-entity id="mercury-orbit" >
+          <a-sphere id="mercury"
+            radius="0.2" 
+            position="0 0 45"
+            color="magenta"></a-sphere>
+        </a-entity>
+        <a-entity id="venus-orbit" rotation = "0 -130 0">
+          <a-sphere id="venus"
+            radius="0.4"
+            position="0 0 50"
+            color="red"></a-sphere>
+        </a-entity>
+        <a-entity id="earch-orbit" rotation = "0 130 0">
+          <a-sphere id="earth"
+            radius="0.5"
+            position="0 0 60"
+            color="blue"></a-sphere>
+        </a-entity>
+        <a-entity id="mars-orbit" rotation = "0 -30 0">
+          <a-sphere id="mars"
+            radius="0.25"
+            position="0 0 65"
+            color="red"></a-sphere>
+        </a-entity>
+        <a-entity id="jupiter-orbit" rotation = "0 90 0">
+          <a-animation
+            attribute = "rotation"
+            dur = "100000"
+            to = "0 360 0"
+            repeat = "indefinite"
+            easing = "linear"
+          ></a-animation>
+          <a-sphere id="jupiter"
+            radius="5.5"
+            position="0 0 80"
+            color="orange"></a-sphere>
+        </a-entity>
+        <a-entity id="saturn-orbit" rotation = "0 180 0">
+          <a-animation
+            attribute = "rotation"
+            dur = "150000"
+            to = "0 -360 0"
+            repeat = "indefinite"
+            easing = "linear"
+          ></a-animation>
+          <a-sphere id="saturn"
+            radius="4.725"
+            position="0 0 100"
+            color="beige">
+
+            <a-entity id = "ring1">
+              <a-animation
+                attribute = "rotation"
+                dur = "5000"
+                to = "360 0 0"
+                repeat = "indefinite"
+                easing = "linear"
+              ></a-animation>
+
+              <a-ring id="saturns-rings"
+                color="brown"
+                radius-inner="5"
+                radius-outer="6"
+                rotation="-90 0 0">
+              </a-ring>
+
+              <a-ring id="saturns-rings"
+                material = "color: brown; side: back"
+                radius-inner="5"
+                radius-outer="6"
+                rotation="-90 0 0">
+              </a-ring>
+            </a-entity>
+
+            <a-entity id = "ring2" rotation = "0 0 90">
+              <a-animation
+                attribute = "rotation"
+                dur = "2000"
+                to = "360 0 0"
+                repeat = "indefinite"
+                easing = "linear"
+              ></a-animation>
+
+              <a-ring id="saturns-rings"
+                color="brown"
+                radius-inner="5"
+                radius-outer="6"
+                rotation="-90 0 0">
+              </a-ring>
+
+              <a-ring id="saturns-rings"
+                material = "color: brown; side: back"
+                radius-inner="5"
+                radius-outer="6"
+                rotation="-90 0 0">
+              </a-ring>
+            </a-entity>
+        
+          </a-sphere>
+        </a-entity>
+        <a-entity id="uranus-orbit" rotation = "0 -100 0">
+          <a-sphere id="uranus"
+            radius="2"
+            position="0 0 122"
+            color="cyan"></a-sphere>
+        </a-entity>
+        <a-entity id="nepture-orbit" rotation = "0 45 0">
+          <a-sphere id="neptune"
+            radius="1.9"
+            position="0 0 140"
+            color="darkblue"></a-sphere>
+        </a-entity>
+      </a-entity>
+    </a-scene>
+  </body>
 </html>
