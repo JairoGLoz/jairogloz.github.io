@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://aframe.io/releases/0.5.0/aframe.min.js" ></script>
+	<style>
+		.aframebox {
+			height: 500px;
+			width: 500px;
+		}
+	</style>
+
+	<title>Embedded Scene</title>
+</head>
+<body>
+	<h1>Embedded Scene</h1>
+	<h2>Escena A-Frame embebida colocando todo el codigo dentro del mismo archivo</h2>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et sapien at nisl vehicula auctor. Fusce vulputate, metus laoreet laoreet congue, enim mi cursus magna, in hendrerit purus lacus eu nunc. Suspendisse sed felis egestas, congue mi at, placerat justo. Aliquam congue nisi ut tortor efficitur dapibus. Morbi orci nulla, molestie ut auctor nec, mattis at felis. Quisque volutpat leo augue, quis pharetra lectus tempus non. Aliquam a rutrum metus.
+	</p>
+
+	<a-scene class="aframebox" embedded>
+		<a-sky color="skyblue"></a-sky>
+
+		<a-plane id="grass-field"
+          height="109.1"
+          width="48.5"
+          color="green"
+          position="0 -0.01 0"
+          rotation="-90 0 0">
+        </a-plane>
+        
+        <a-plane id="center-field" color="white" height="0.5" width="48.5" rotation="-90 0 0"></a-plane>
+		
+		<a-collada-model
+          id="football-player"
+          src="assets/football-player/model.dae"
+          position="0 0 0">
+        </a-collada-model>
+
+        <a-camera position="0 0 5"></a-camera>
+	</a-scene>
+
+	<p>
+		Aliquam commodo arcu quis consectetur sollicitudin. In metus ligula, lobortis at dui in, dictum tempus eros. Vivamus pretium vestibulum dui a varius. Morbi condimentum consequat porta. Pellentesque varius vehicula velit sed euismod. Quisque consectetur a tortor sed lacinia. Vivamus interdum egestas dui, tincidunt euismod sapien molestie vitae. Vivamus ornare risus magna, id tempor dui fringilla a. Duis ut nulla velit. Nunc a ultricies massa. Ut efficitur congue lacus non iaculis. Quisque nisl tellus, tincidunt vel nibh vel, gravida feugiat nulla. Etiam nec elit at justo tempor aliquam. Nunc et dignissim mauris, id accumsan ipsum. Nam molestie, libero sit amet porttitor efficitur, felis massa dapibus augue, vitae tristique lectus diam id massa.
+	</p>
+
+	<p>
+		Suspendisse mauris purus, luctus tincidunt ligula eu, hendrerit elementum neque. Praesent eget sollicitudin purus. Duis est ligula, fringilla a justo ac, elementum vestibulum orci. Curabitur nisl risus, feugiat eu blandit fermentum, cursus quis enim. Sed nec egestas orci, sed rutrum odio. Maecenas fermentum molestie metus eu mattis. Ut sodales justo quis tincidunt condimentum. Morbi vitae tristique velit. Donec ac mollis dui, ut viverra ante. Mauris sodales venenatis metus id dapibus. Donec a malesuada tortor, quis iaculis ex.
+	</p>
+
+</body>
+</html>
