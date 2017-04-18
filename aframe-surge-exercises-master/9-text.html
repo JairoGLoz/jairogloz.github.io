@@ -1,9 +1,10 @@
 <html>
   <head>
     <title>Lesson 9: Text Component</title>
-    <script src="assets/aframe-0.4.js"></script>
+    <!--<script src="assets/aframe-0.4.js"></script>-->
+    <script src="https://aframe.io/releases/0.5.0/aframe.min.js" ></script>
     <script src="assets/aframe-text-component.js"></script>
-    <script src="assets/aframe-bmfont-text-component.js"></script>
+    <!--<script src="https://rawgit.com/bryik/aframe-bmfont-text-component/master/dist/aframe-bmfont-text-component.min.js"></script>-->
   </head>
   <body>
     <!--
@@ -36,7 +37,7 @@
             and what they do, here:
             https://github.com/ngokevin/kframe/tree/master/components/text/
           -->
-          <a-entity material="color:magenta" text="text: Home; size: 2" position="-3.5 10 0"></a-entity>
+          <a-entity id="textHome" material="color:black" text="text: Home; size: 2" position="-3.5 10 0"></a-entity>
           <a-plane color="magenta" width="5.64" height="0.3" position="0 3.05 0"></a-plane>
           <a-plane color="magenta" width="0.3" height="6.1" position="-2.82 6.0 0"></a-plane>
           <a-plane color="magenta" width="0.3" height="6.1" position="2.82 6.0 0"></a-plane>

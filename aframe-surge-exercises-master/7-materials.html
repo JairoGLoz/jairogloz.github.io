@@ -27,7 +27,7 @@
     -->
     <a-scene>
       <a-torus
-        material="color: #EAEFF2;roughness: 0.1;metalness: 0.5;"
+        material="color: #EAEFF2;roughness: 0.1;metalness: 0.75;"
         position="0 1 -4">
           <a-animation attribute="rotation"
                dur="10000"
@@ -50,6 +50,10 @@
                to="0 360 0"
                repeat="indefinite"></a-animation>
       </a-torus>
+
+      <a-entity geometry="primitive: cylinder" postion = "0 0 -8"
+          material="src: assets/treebark.jpg; color: #696969; roughness: 1; metalness: 0">
+      </a-entity>
     </a-scene>
   </body>
 </html>

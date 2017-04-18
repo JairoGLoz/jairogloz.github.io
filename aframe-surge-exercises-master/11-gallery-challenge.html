@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Lesson 9: Text Component</title>
+    <title>Lesson 11: Image Galleryt</title>
     <script src="https://aframe.io/releases/0.4.0/aframe.js"></script>
   </head>
   <body>
@@ -27,6 +27,27 @@
     And remember: put it on your face!
     -->
     <a-scene>
+
+        <a-assets>
+            <a-asset-item id="giraffe_obj" src="assets/giraffe/giraffe_obj.obj" ></a-asset-item>
+            <a-asset-item id="giraffe_mtl" src="assets/giraffe/giraffe_obj.mtl"></a-asset-item>
+        </a-assets>
+
+        <a-plane id="floor" height="10" width="12" rotation ="-90 0 0" color="#999999" position="0 0 -2"></a-plane>
+
+        <a-plane height="7" width="12" rotation ="0 0 0" color="blue" position= "0 3.5 -7"></a-plane>
+
+        <a-image id="painting_1" src="assets/mona_lisa.jpg" height="4.4" width="3" position="-4 4 -6.9"></a-image>
+
+        <a-image id="painting_2" src="assets/the_last_judgment.jpg" height="3.6" width="3" position="0 4 -6.9"></a-image>
+
+        <a-image id="painting_2" src="assets/david_and_goliath.jpg" height="3.4" width="3" position="4 4 -6.9"></a-image>
+
+        <a-cylinder position="0 0 -3" scale="1 1 1" color="grey"></a-cylinder>
+        <a-obj-model src="#giraffe_obj" mtl="#giraffe_mtl" position="0 0.5 -3" scale="0.015 0.015 0.015" rotation="0 -90 0"></a-obj-model>
+
+        <a-camera position="0 0 0"></a-camera>
+
     </a-scene>
   </body>
 </html>
