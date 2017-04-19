@@ -35,9 +35,10 @@
 
         <a-plane id="floor" height="10" width="12" rotation ="-90 0 0" color="#999999" position="0 0 -2"></a-plane>
 
-        <a-plane height="7" width="12" rotation ="0 0 0" color="blue" position= "0 3.5 -7"></a-plane>
+        <a-image id="wall" height="7" width="12" rotation ="0 0 0" src="assets/lion_wall.jpg" color="#777777" position= "0 3.5 -7"></a-image>
 
-        <a-image id="painting_1" src="assets/mona_lisa.jpg" height="4.4" width="3" position="-4 4 -6.9"></a-image>
+        <a-light id="mona_lisa_light" type="spot" position="0 6 2" rotation="-30 0 0" distance="17" angle="30"></a-light>
+        <a-image id="mona_lisa" src="assets/mona_lisa.jpg" height="4.4" width="3" position="-4 4 -6.9"></a-image>
 
         <a-image id="painting_2" src="assets/the_last_judgment.jpg" height="3.6" width="3" position="0 4 -6.9"></a-image>
 
@@ -48,6 +49,8 @@
 
         <a-camera position="0 0 0"></a-camera>
 
+        <a-light type="directional" position="0 3 0" color="black"></a-light>
+        <a-sky src="assets/360.jpg"></a-sky>
     </a-scene>
   </body>
 </html>
