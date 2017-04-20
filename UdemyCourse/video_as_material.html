@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Using a video as a material</title>
+	<script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+</head>
+<body>
+
+	<a-scene>
+		<a-assets>
+			<video  id = "got_mp4" src="assets/Official Opening Credits Game of Thrones (HBO).mp4">
+		</a-assets>
+		
+		<a-image width="10" height="7" position = "0 5.5 -9" src = "#got_mp4"></a-image>
+		<a-plane width = "100" height="100" src = "assets/concrete.jpg" rotation = "-90 0 0"></a-plane>
+
+		<a-sky src="assets/lab.jpg"></a-sky>
+
+	</a-scene>
+
+</body>
+</html>
