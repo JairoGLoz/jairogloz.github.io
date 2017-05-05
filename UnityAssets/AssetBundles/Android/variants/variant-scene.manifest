@@ -1,0 +1,15 @@
+ManifestFileVersion: 0
+CRC: 3889477274
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 7a7b9470c4e7286071eeddc4fb9e19b2
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 31d6cfe0d16ae931b73c59d7e0c089c0
+HashAppended: 0
+ClassTypes: []
+Assets:
+- Assets/AssetBundleSample/SampleAssets/Variants/VariantScene.unity
+Dependencies:
+- /Users/jairolozano/repos/Unity5_6/AssetBundle/AssetBundles/Android/variants/myassets.hd
