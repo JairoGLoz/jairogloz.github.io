@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Feliz Cumple Carmen!</title>
+    <!--<script src="https://aframe.io/releases/latest/aframe.min.js"></script>-->
+    <script src = "https://aframe.io/releases/0.5.0/aframe.min.js" ></script>
+
+</head>
+
+<body>
+    <a-scene>
+
+        <a-assets>
+            <img id="skybox" src="360.jpg">
+            <img id="photo" src="photo.jpg">
+        </a-assets>
+
+        <a-sky src="#skybox"></a-sky>
+
+        <a-entity
+                id="size"
+                position = "0 2 -5"
+                text="color: black; value: FELIZ CUMPLE CARMEN!; align: center; width: 10"></a-entity>
+
+        <a-box src="gift.jpg" position = "0 1 -2" rotation = "0 30 0" ></a-box>
+
+        <a-image src="#photo" position = "0 1.5 1"></a-image>
+
+
+
+
+
+        <a-camera position = "0 0 0"></a-camera>
+    </a-scene>
+</body>
+<script>
+
+    // Animate size.
+    var size = document.getElementById('size');
+    var objsize = {scale: 60};
+    var tween = new AFRAME.TWEEN.Tween(objsize)
+        .to({scale: 20}, 1000)
+        .repeat( Infinity )
+        .yoyo( true )
+        .onUpdate(function () {
+            size.setAttribute('text', 'wrapCount', objsize.scale);
+        })
+        .start();
+</script>
+</html>
